@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AIR JORDAN</title>
+
+    <!-- icon on the tab -->
+    <link rel="icon" href="./Resources/air_jordan_1_hand_drawing(PNG).png" />
+
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="./catalogue_style.css" />
+  </head>
+
+  <!-- body starts here -->
+
+  <body>
+    <div class="background" id="shopping_background_j">
+      <div id="nav_bar">
+        <a id="home" href="index.html">
+          <img src="./Resources/airmax_90_hand_painted_(png).png" id="logo" />
+        </a>
+        <h1 id="heading">AIR JORDAN</h1>
+        <nav>
+          <ul>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--       
+      <h1 id="heading">AIR JORDAN</h1> -->
+
+      <div class="slider">
+        <div class="slides">
+          <!-- radio-btn start -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!-- radio-btn end -->
+          <!-- slide images start -->
+
+          <div class="slide first">
+            <img
+              id="img1"
+              src="./Resources/Catalogue_resources/Air_Jordans/BlueBerry_jordan_1_edited_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="img2"
+              src="./Resources/Catalogue_resources/Air_Jordans/air_jordan_1_chicago_edited_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="img3"
+              src="./Resources/Catalogue_resources/Air_Jordans/Air_jordan_1_chicago2_edited.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="img4"
+              src="./Resources/Catalogue_resources/Air_Jordans/Air_jordan_1_on wood_edited_FB.jpg"
+              alt=""
+            />
+          </div>
+          <!-- slide images end -->
+          <!-- automatic navigation start -->
+          <div class="navigation_auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation_manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+      </div>
+      <!-- image slider end -->
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
+
+      <br />
+      <div class="images">
+        <div class="jordan">
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_retro_OG.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_off_white_blue-colorway.png"
+            alt=""
+          />
+
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_jordan_1_Travis_scott.png"
+            alt=""
+          />
+
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_3_elephant.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_4_retro_levis_blk.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_5.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_5_laney.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_jordan_5_Travis_scott_Cactus_Jack.png"
+            alt=""
+          />
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_6_Micheal_Jordan_signature_infrared.png"
+            alt=""
+          />
+
+          <img
+            src="./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_tee_blk.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
