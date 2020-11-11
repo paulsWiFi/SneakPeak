@@ -32,6 +32,26 @@ html {
   font-size: 3.5rem;
   margin-left: 53rem;
 }
+#zipcode {
+  align-items: center;
+  text-align: center;
+  font-family: montserrat;
+  color: white;
+  background-color: black;
+  margin-left: 30rem;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#zipcode:hover {
+  transform: scale(1.1);
+}
 
 nav {
   flex: 1;
