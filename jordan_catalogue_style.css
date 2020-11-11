@@ -91,7 +91,6 @@ body {
   background: black;
   overflow-y: scroll;
   overflow-x: hidden;
-  min-height: calc();
 }
 
 /* ANIMATION
@@ -257,7 +256,7 @@ body {
   border: rgba(187, 209, 208, 0.2) solid 0.5px;
   /* border-radius: 1.5rem; */
   padding: 2rem 3rem;
-  margin: 2rem, 3rem;
+  margin: 2rem;
   cursor: pointer;
   background-position: center;
   background-size: cover;
@@ -275,7 +274,6 @@ h2 {
 } */
 
 .add_to_cart {
-  place-content: bottom;
   text-decoration: none;
   color: white;
   background-color: black;
@@ -290,7 +288,7 @@ h2 {
   text-align: center;
   margin-top: 90%;
   opacity: 0.3;
-  transition: all opacity ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 .add_to_cart:hover {
   opacity: 1;
