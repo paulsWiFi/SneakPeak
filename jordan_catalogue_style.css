@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 * {
   margin: 0;
@@ -30,20 +30,50 @@ html {
 }
 #heading {
   color: white;
-  font-family: montserrat;
+  width: 100%;
+  text-align: left;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  transition: transform ease 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0.8rem;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+  color: white;
+}
+nav:hover {
+  transform: translateY(-5px);
+}
+#select {
+  color: white;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 3.5rem;
-  margin-left: 53rem;
+
+  /* margin-left: 53rem; */
 }
 #zipcode {
-  align-items: center;
+  /* align-items: center; */
+
+  display: inline-block;
   text-align: center;
-  font-family: montserrat;
+  font-family: "Montserrat", sans-serif;
   color: white;
   background-color: black;
-  margin-left: 30rem;
+  /* margin-left: 30rem; */
   border: solid 1px white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   padding-left: 2rem;
@@ -56,29 +86,6 @@ html {
   transform: scale(1.1);
 }
 
-nav {
-  flex: 1;
-  text-align: right;
-  transition: transform ease 0.5s;
-}
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin-left: 0.8rem;
-  font-size: 1.7rem;
-  font-family: montserrat;
-  padding: 1rem 2.5rem 1rem 2.5rem;
-}
-nav ul li a {
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 1rem;
-  color: white;
-}
-nav:hover {
-  transform: translateY(-5px);
-}
-
 /* everything in the header ENDS here */
 
 body {
@@ -86,10 +93,10 @@ body {
   padding: 0;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   background: black;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   overflow-x: hidden;
 }
 
@@ -105,7 +112,7 @@ body {
 .slider {
   width: 100%;
   height: 70vh;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
 }
 .slides {
@@ -193,6 +200,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   display: flex;
   margin-top: 2rem;
@@ -202,7 +210,7 @@ body {
 }
 .navigation_auto div {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem;
+  padding: 01rem;
   border-radius: 10rem;
   margin-left: 1rem;
   justify-content: center;
@@ -215,19 +223,19 @@ body {
   margin-right: 1rem;
 }
 #radio1:checked ~ .navigation_auto .auto-btn1 {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #radio2:checked ~ .navigation_auto .auto-btn2 {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #radio3:checked ~ .navigation_auto .auto-btn3 {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #radio4:checked ~ .navigation_auto .auto-btn4 {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* ANIMATION ENDS HERE */
@@ -235,18 +243,22 @@ body {
 /* CARDS START HERE */
 
 .row {
-  display: flex;
-  height: 60%;
-  align-items: center;
+  display: inline-block;
+
+  /* align-items: center; */
 }
 /* .col {
-  /* flex-basis: 40%; 
-}*/
+  flex-basis: 40%;
+} */
 .cards {
-  margin-top: 150vh;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  justify-content: space-around;
+  margin-top: 8vh;
+  margin-left: 10%;
+  /* margin-right: 25%; */
+  overflow: hidden;
+
+  width: 100%;
+  align-items: center;
+  /* max-width: 50%; */
 }
 
 .card {
@@ -284,7 +296,7 @@ h2 {
   cursor: pointer;
   border-radius: 2rem;
   font-size: 15px;
-  font-family: montserrat;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 90%;
   opacity: 0.3;
@@ -536,7 +548,7 @@ h2 {
 /* footer Strart */
 
 footer {
-  margin-top: 80%;
+  margin-top: 10vh;
   margin-bottom: 5%;
   text-align: center;
   text-decoration: none;
@@ -549,5 +561,5 @@ footer {
   display: block;
 
   background: none;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
