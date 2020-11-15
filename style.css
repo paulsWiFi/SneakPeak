@@ -94,6 +94,7 @@ nav:hover {
   width: 100%;
 }
 .card {
+  font-family: "Montserrat", sans-serif;
   width: 20rem;
   height: 25rem;
   display: inline-block;
