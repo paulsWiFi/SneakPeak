@@ -29,9 +29,10 @@ html {
   transform: translateY(-5px);
 }
 #heading {
-  color: white;
+  color: black;
   width: 100%;
   text-align: left;
+  font-size: 3.5rem;
 }
 nav {
   flex: 1;
@@ -50,7 +51,7 @@ nav ul li a {
   text-decoration: none;
   display: inline-block;
   margin-left: 1rem;
-  color: white;
+  color: black;
 }
 nav:hover {
   transform: translateY(-5px);
@@ -69,10 +70,10 @@ nav:hover {
   display: inline-block;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   /* margin-left: 30rem; */
-  border: solid 1px white;
+  border: solid 1px black;
   border-radius: 20px;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
@@ -84,6 +85,8 @@ nav:hover {
 }
 #zipcode:hover {
   transform: scale(1.1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* everything in the header ENDS here */
@@ -95,7 +98,7 @@ body {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
-  background: black;
+  background: white;
   /* overflow-y: scroll; */
   overflow-x: hidden;
 }
@@ -164,7 +167,7 @@ body {
   justify-content: center;
 }
 .manual-btn {
-  border: 1px solid white;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10rem;
   margin-left: 1rem;
@@ -172,7 +175,7 @@ body {
   cursor: pointer;
   transition: 0.5s;
 
-  box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .manual-btn:not(:last-child) {
   margin-right: 1rem;
@@ -181,8 +184,9 @@ body {
   transition: all ease-in-out 0.5s;
 }
 .manual-btn:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   transform: scale(1.4);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -209,7 +213,7 @@ body {
   margin-top: 72.5vh;
 }
 .navigation_auto div {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 01rem;
   border-radius: 10rem;
   margin-left: 1rem;
@@ -217,25 +221,25 @@ body {
   cursor: pointer;
   transition: 0.5s;
 
-  box-shadow: 1px 1px 15px 5px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.2); */
 }
 .navigation_auto div:not(:last-child) {
   margin-right: 1rem;
 }
 #radio1:checked ~ .navigation_auto .auto-btn1 {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #radio2:checked ~ .navigation_auto .auto-btn2 {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #radio3:checked ~ .navigation_auto .auto-btn3 {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #radio4:checked ~ .navigation_auto .auto-btn4 {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* ANIMATION ENDS HERE */
@@ -321,8 +325,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/1_Vans_old_skool_b&w.png);
   background-position: center;
   background-size: 90%;
@@ -330,7 +334,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .one:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -344,8 +348,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/2_Vans_old_skool_blue_topaz.png);
   background-position: center;
   background-size: 90%;
@@ -353,7 +357,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .two:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -367,8 +371,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/3_Vans_old_skool_Checkerboard.png);
   background-position: center;
   background-size: 90%;
@@ -376,7 +380,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .three:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -390,8 +394,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/4_Vans_old_skool_colored.png);
   background-position: center;
   background-size: 90%;
@@ -399,7 +403,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .four:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -413,8 +417,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/5_Vans_old_skool_platform.png);
   background-position: center;
   background-size: 90%;
@@ -422,7 +426,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .five:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -436,8 +440,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/6_Vans_sk8.png);
   background-position: center;
   background-size: 90%;
@@ -445,7 +449,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .six:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -459,8 +463,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/7_Vans_van_gogh.png);
   background-position: center;
   background-size: 90%;
@@ -468,7 +472,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .seven:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -482,8 +486,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/8_vans_sk8_odd_future.png);
   background-position: center;
   background-size: 90%;
@@ -491,7 +495,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .eight:hover {
-  color: white;
+  color: black;
 
   background-size: 100%;
   font-size: 1.2rem;
@@ -506,8 +510,8 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/9_Vans_revengexstorm_lady.png);
   background-position: center;
   background-size: 90%;
@@ -515,7 +519,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .nine:hover {
-  color: white;
+  color: black;
   background-size: 100%;
   font-size: 1.2rem;
 }
@@ -529,16 +533,16 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   /* font-size: 1.8rem; */
-  box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
   background-image: url(../../Resources/Catalogue_resources/Vans/PNGs/10_Vans_revengexstorm_red.png);
   background-position: center;
   background-size: 90%;
   background-repeat: no-repeat;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .ten:hover {
-  color: white;
+  color: black;
   /* background-image: url(./Resources/Catalogue_resources/Air_Jordans/PNGs/Air_Jordan_tee_gry.png); */
   background-size: 100%;
   font-size: 1.2rem;
@@ -554,12 +558,13 @@ footer {
   text-decoration: none;
   font-size: 1.5rem;
   padding-bottom: 2.3rem;
+  padding-top: 2.3rem;
   position: sticky;
 
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
 
-  background: none;
+  /* background: none; */
   font-family: "Montserrat", sans-serif;
 }
