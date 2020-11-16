@@ -20,10 +20,11 @@ html {
   align-items: center;
 }
 #logo {
-  width: 120px;
-  height: 115px;
+  width: 90px;
+  height: 60px;
   cursor: pointer;
   transition: transform ease 0.5s;
+  margin-left: 2.5rem;
 }
 #logo:hover {
   transform: translateY(-5px);
@@ -33,6 +34,7 @@ html {
   width: 100%;
   text-align: left;
   font-size: 3.5rem;
+  margin-left: 2.5rem;
 }
 nav {
   flex: 1;
