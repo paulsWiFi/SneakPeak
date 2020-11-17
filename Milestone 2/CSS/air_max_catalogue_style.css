@@ -82,7 +82,14 @@ nav:hover {
   /* border: 0.1rem solid rgba(0, 0, 0, 0.5); */
   background-color: rgba(0, 0, 0, 0.7);
 }
-
+.cart {
+  /* padding-right: 2rem; */
+  padding-left: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+.cart:hover {
+  transform: translateY(-2px);
+}
 #select {
   color: white;
   font-family: "Montserrat", sans-serif;
