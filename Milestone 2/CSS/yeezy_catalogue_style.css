@@ -58,6 +58,31 @@ nav ul li a {
 nav:hover {
   transform: translateY(-5px);
 }
+
+#join {
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.5rem;*/
+  margin-right: 1rem;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+#join:hover {
+  transform: scale(1.1);
+  color: white;
+  /* border: 0.1rem solid rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 #select {
   color: white;
   font-family: "Montserrat", sans-serif;

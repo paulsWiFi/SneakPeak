@@ -230,8 +230,8 @@ footer {
   text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
-  padding-bottom: 2.3rem;
-  padding-top: 2.3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   border: none;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -251,12 +251,12 @@ footer a {
   color: white;
   border-radius: 5rem;
   cursor: pointer;
-  transition: transform 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 footer a:hover {
-  transform: translateX(-5px);
-  border: 0.1rem solid rgba(58, 115, 221, 0.5);
-  background-color: rgba(58, 115, 221, 0.2);
+  /* transform: translateX(-5px); */
+  /* border: 0.1rem solid rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 footer p {
   font-family: "Montserrat", sans-serif;
