@@ -13,7 +13,7 @@ html {
   height: 5rem;
   cursor: pointer;
   transition: transform ease 0.5s;
-  align-items: right;
+
   margin-bottom: 2rem;
 }
 #logo:hover {
@@ -55,7 +55,7 @@ body {
   width: 100%;
   position: relative;
   height: 5rem;
-  align-items: right;
+
   overflow: hidden;
 }
 .name input {
@@ -112,7 +112,7 @@ name input:valid + .label_name::after {
   width: 100%;
   position: relative;
   height: 5rem;
-  align-items: right;
+
   overflow: hidden;
 }
 .email input {
@@ -169,7 +169,7 @@ email input:valid + .label_email::after {
   width: 100%;
   position: relative;
   height: 5rem;
-  align-items: right;
+
   overflow: hidden;
 }
 .password input {

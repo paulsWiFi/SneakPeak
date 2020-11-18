@@ -76,8 +76,6 @@ nav a:hover {
   background-color: chartreuse;
 }
 
-}
-
 #select {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -175,9 +173,9 @@ img {
 .total td {
   padding-top: 1rem;
 }
-.totally{
-    color: red;
-text-decoration: underline black;
+.totally {
+  color: red;
+  text-decoration: underline black;
 }
 td:last-child {
   text-align: right;
