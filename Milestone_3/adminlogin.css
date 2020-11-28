@@ -38,15 +38,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .login_page {
+  /* background-color: red; */
   text-align: center;
-
-  font-size: 3.5rem;
+  align-items: center;
+  font-size: 2.5rem;
   width: 060vw;
   margin-top: 5vh;
-  color: cornflowerblue;
+  color: coral;
   font-weight: lighter;
+
+  /* padding-left: 3rem;
+    padding-right: 3rem; */
   padding: 10rem 2.5rem;
-  box-shadow: 0px 0px 10px 0px rgba(100, 149, 237, 0.5);
+  box-shadow: 0px 0px 10px 0px coral;
 }
 .name {
   width: 100%;
@@ -77,7 +81,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid coral;
+  border-bottom: 3px solid cornflowerblue;
   left: 0px;
   bottom: -1px;
   transform: translateX(-100%);
@@ -95,7 +99,7 @@ body {
   transform: translateY(-125%);
   font-size: 1.8rem;
   font-weight: bold;
-  color: coral;
+  color: cornflowerblue;
 }
 .name input:focus + .label_name::after,
 name input:valid + .label_name::after {
@@ -134,7 +138,7 @@ name input:valid + .label_name::after {
   position: absolute;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid coral;
+  border-bottom: 3px solid cornflowerblue;
   left: 0px;
   bottom: -1px;
   transform: translateX(-100%);
@@ -152,7 +156,7 @@ name input:valid + .label_name::after {
   transform: translateY(-125%);
   font-size: 1.8rem;
   font-weight: bold;
-  color: coral;
+  color: cornflowerblue;
 }
 .email input:focus + .label_email::after,
 email input:valid + .label_email::after {
@@ -191,7 +195,7 @@ email input:valid + .label_email::after {
   position: absolute;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid coral;
+  border-bottom: 3px solid cornflowerblue;
   left: 0px;
   bottom: -1px;
   transform: translateX(-100%);
@@ -209,33 +213,21 @@ email input:valid + .label_email::after {
   transform: translateY(-125%);
   font-size: 1.8rem;
   font-weight: bold;
-  color: coral;
+  color: cornflowerblue;
 }
 .password input:focus + .label_password::after,
 password input:valid + .label_password::after {
   transform: translateX(0%);
 }
+
 #additional {
   font-size: 1.5rem;
   padding-top: 2rem;
 }
-
-.new_account {
-  text-decoration: none;
-  color: cornflowerblue;
-  transition: all 0.3s ease;
-  padding-right: 2rem;
-}
-
-.new_account:hover {
-  color: coral;
-  font-size: 1.6rem;
-}
 .forgot {
   text-decoration: underline;
-  color: cornflowerblue;
+  color: coral;
   transition: all 0.3s ease;
-  padding-left: 2rem;
 }
 
 .forgot:hover {
@@ -245,16 +237,16 @@ password input:valid + .label_password::after {
 
 #submit {
   border: none;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   font-size: 2.5rem;
   padding: 0.5rem 3rem;
-  box-shadow: 0px 0px 5px 0px cornflowerblue;
+  box-shadow: 0px 0px 5px 0px coral;
   background: none;
   border-radius: 50px;
   transition: 0.5s ease-in-out;
 }
 #submit:hover {
-  background-color: cornflowerblue;
+  background-color: coral;
   box-shadow: none;
   color: white;
 }

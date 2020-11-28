@@ -315,23 +315,23 @@ footer {
   outline: none;
   background-size: 3rem;
 }
-.done {
+#done {
   background-color: rgba(127, 255, 0, 0.5);
   padding-top: 10rem;
   padding-bottom: 10rem;
   margin-top: 10rem;
   border-radius: 40px;
 }
-.done h1 {
+#done_h1 {
   text-align: center;
   font-size: 3rem;
   padding-top: 3rem;
 }
-.done h2 {
+#done_h2 {
   text-align: center;
   font-size: 2rem;
 }
-.done a {
+#done_homebtn {
   color: black;
   font-weight: bolder;
   display: block;

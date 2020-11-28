@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LOGIN</title>
+    <title>ADMIN LOGIN</title>
     <meta charset="utf-8" />
     <!-- icon on the tab -->
     <link
       rel="icon"
-      href="https://img.icons8.com/material/48/000000/login-rounded-right--v1.png"
+      href="https://img.icons8.com/material-rounded/50/000000/settings.png"
     />
-
-    <!-- <img src="https://img.icons8.com/android/24/000000/about.png"/> -->
 
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
 
     <!-- link to the stylesheet -->
-    <link rel="stylesheet" href="./CSS/login_style.css" />
+    <link rel="stylesheet" href="./adminlogin.css" />
 
     <!-- icon -->
     <link
@@ -38,16 +36,16 @@
   <body>
     <div class="background">
       <div class="login_page">
-        <a id="home" href="../index.html">
+        <!-- <a id="home" href="../index.html">
           <img
             src="https://img.icons8.com/fluent-systems-filled/144/000000/home.png"
             id="logo"
             alt="home"
           />
-        </a>
+        </a> -->
 
-        <h1>LOGIN</h1>
-        <form action="../index.html">
+        <h1>WELCOME BACK</h1>
+        <form action="./admin.html">
           <div class="form">
             <div class="name">
               <input
@@ -58,7 +56,7 @@
                 autocomplete="on"
               />
               <label for="namespan" class="label_name"
-                ><span class="content_name">Username </span></label
+                ><span class="content_name">Username/ User ID </span></label
               >
             </div>
             <div class="email">
@@ -88,8 +86,6 @@
               </label>
             </div>
             <div id="additional">
-              <a class="new_account" href="#"> New here... SIGN UP</a>
-
               <a class="forgot" href="#"> Forgot Password</a>
             </div>
             <input type="submit" name="submit" id="submit" value="LOGIN" />

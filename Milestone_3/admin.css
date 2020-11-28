@@ -1,0 +1,237 @@
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* everything in the header STARTS here */
+
+#nav_bar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin-left: 2.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+#heading {
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-left: 2.5rem;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  transition: transform ease 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  /* margin-left: 0.8rem; */
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  /* margin-left: 1rem; */
+  color: black;
+  transition: all ease 0.5s;
+}
+nav ul li a:hover {
+  transform: translateX(5px);
+  color: red;
+  text-decoration: underline;
+}
+
+/* everything in the header ENDS here */
+
+.admin_page {
+  height: 100%;
+
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  width: 50vw;
+  margin-top: 5vh;
+  padding: 2.5rem 2.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(100, 149, 237, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  /* height: 100%; */
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(../Resources/Non-essential_Resources/air_jordan_1_booberrry.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 15vh;
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.header h1 {
+  text-shadow: 0px 0px 10px 0px black;
+  letter-spacing: 1px;
+}
+.form {
+  text-align: center;
+  font-weight: bold;
+  /* background-color: red; */
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* PRODUCT NAME */
+
+.prod_name {
+  font-size: 1.5rem;
+}
+.prod_name input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: cornflowerblue;
+}
+.prod_name input:focus {
+  border-bottom: 3px solid coral;
+  color: coral;
+}
+
+/* PRODUCT ID */
+
+.prod_id {
+  font-size: 1.5rem;
+}
+.prod_id input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: cornflowerblue;
+}
+.prod_id input:focus {
+  border-bottom: 3px solid coral;
+  color: coral;
+}
+/* PRODUCT TYPE */
+
+.prod_type {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.prod_type select {
+  width: 50%;
+}
+.prod_type {
+  text-align: center;
+}
+
+/* DATE OF MANFACTURE */
+
+.man_date {
+  font-size: 1.5rem;
+}
+.man_date input {
+  width: 50%;
+  text-align: center;
+}
+
+/* PRODUCT PRICE */
+
+.prod_price {
+  font-size: 1.5rem;
+}
+.prod_price input {
+  width: 50%;
+}
+
+/* PRODUCT TAX */
+
+.prod_tax {
+  font-size: 1.5rem;
+}
+.prod_tax input {
+  width: 50%;
+}
+
+/* PRODUCT PHOTO */
+
+.prod_photo {
+  font-size: 1.5rem;
+  align-items: center;
+  width: 50%;
+  height: 10rem;
+  border: 1rem solid black;
+  position: absolute;
+}
+.prod_photo input[type="file"] {
+  width: 50%;
+  display: none;
+  text-align: center;
+}
+.prod_photo label {
+  cursor: pointer;
+  color: white;
+  height: 20%;
+  width: 30vw;
+  background-color: coral;
+  background-position: center;
+  position: relative;
+  /* margin: auto; */
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* SUBMIT */
+
+.submit {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
