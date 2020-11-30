@@ -258,3 +258,23 @@ password input:valid + .label_password::after {
   box-shadow: none;
   color: white;
 }
+.admin {
+  /* background-color: red; */
+  max-width: 100vw;
+  padding-left: 90%;
+  /* padding-right: 50%; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#admin img {
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+  opacity: 0.2;
+}
+.admin img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+#admin img:hover {
+  opacity: 1;
+}

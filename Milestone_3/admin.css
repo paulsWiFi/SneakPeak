@@ -100,7 +100,6 @@ body {
   font-weight: bold;
 }
 .header h1 {
-  text-shadow: 0px 0px 10px 0px black;
   letter-spacing: 1px;
 }
 .form {
@@ -112,6 +111,13 @@ body {
   margin-bottom: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+::placeholder {
+  font-size: 1.2rem;
+  color: cornflowerblue;
+}
+input:focus::placeholder {
+  color: transparent;
 }
 
 /* PRODUCT NAME */
@@ -128,11 +134,17 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  color: cornflowerblue;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
 .prod_name input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
   border-bottom: 3px solid coral;
-  color: coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 
 /* PRODUCT ID */
@@ -149,23 +161,69 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  color: cornflowerblue;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
 }
 .prod_id input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
   border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+/* PRODUCT NAME */
+
+.prod_color {
+  font-size: 1.5rem;
+}
+.prod_color input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.prod_color input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 /* PRODUCT TYPE */
 
 .prod_type {
   font-size: 1.5rem;
-  text-align: center;
 }
 .prod_type select {
   width: 50%;
-}
-.prod_type {
+  text-align-last: center;
   text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.5rem;
+}
+
+.prod_type select:focus {
+  font-size: 1.5rem;
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: black;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 
 /* DATE OF MANFACTURE */
@@ -176,6 +234,22 @@ body {
 .man_date input {
   width: 50%;
   text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.man_date input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 
 /* PRODUCT PRICE */
@@ -185,6 +259,23 @@ body {
 }
 .prod_price input {
   width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.prod_price input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 
 /* PRODUCT TAX */
@@ -194,36 +285,56 @@ body {
 }
 .prod_tax input {
   width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.prod_tax input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
 }
 
 /* PRODUCT PHOTO */
 
 .prod_photo {
   font-size: 1.5rem;
-  align-items: center;
-  width: 50%;
-  height: 10rem;
-  border: 1rem solid black;
-  position: absolute;
+  width: auto;
+  height: 16rem;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 5px 0px cornflowerblue;
 }
 .prod_photo input[type="file"] {
-  width: 50%;
-  display: none;
-  text-align: center;
+  width: 100%;
+  height: 75%;
+  /* display: none; */
+  cursor: pointer;
+  background-color: transparent;
+  text-align: left;
+  opacity: 1;
+  background-image: url(../Resources/down-arrow.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  border-bottom: 3px solid black;
 }
 .prod_photo label {
+  padding-top: 1rem;
   cursor: pointer;
-  color: white;
-  height: 20%;
-  width: 30vw;
-  background-color: coral;
+  color: black;
+  height: auto;
+  width: auto;
+  /* background-color: coral; */
   background-position: center;
-  position: relative;
-  /* margin: auto; */
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -233,5 +344,20 @@ body {
 
 .submit {
   font-size: 1.5rem;
+}
+.submit input {
   cursor: pointer;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 4rem;
+  color: black;
+  background: none;
+  border: 1px solid cornflowerblue;
+  box-shadow: 0px 0px 10px 0px cornflowerblue;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.submit input:hover {
+  color: black;
+  background-color: cornflowerblue;
 }
