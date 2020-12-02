@@ -12,8 +12,10 @@ html {
 }
 
 body {
-  color: red;
+  /* background-color: black; */
+  color: white;
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
   height: 100vh;
@@ -21,16 +23,16 @@ body {
 
 /* everything in the header STARTS here */
 
-#nav_bar {
+/* #nav_bar {
   height: 10%;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+} */
 #logo {
-  margin-left: 2.5rem;
-  width: 40px;
-  height: 40px;
+  /* margin-left: 2.5rem; */
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: transform ease 0.5s;
 }
@@ -39,59 +41,20 @@ body {
 }
 
 #heading {
-  margin-top: 1rem;
-  color: red;
+  color: white;
   width: 100%;
+  font-style: italic;
   text-align: center;
   font-weight: lighter;
   letter-spacing: 1rem;
 }
-h1 {
+/* h1 {
   font-size: 4.5rem;
   font-family: "Anton" sans-serif;
 }
 h2 {
   font-size: 2.5rem;
   margin-top: 3rem;
-}
-
-/* header {
-  min-height: 100vh;
-  padding: 30vw 0 5vw;
-  position: relative;
-  transform-style: inherit;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-header h1 {
-  margin-top: -250px;
-}
-header,
-header:before {
-  background: 50% 50% / cover;
-}
-header::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  background-image: url(../../Resources/Catalogue_resources/Others/Jordan_wall.jpg);
-  background-size: cover;
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
-header * {
-  letter-spacing: 0.2em;
-  margin: 0;
-  text-align: center;
-  font-weight: normal;
-  padding: 1em 0;
 } */
 
 /* everything in the header ENDS here */
@@ -101,20 +64,77 @@ header * {
 .a {
   max-width: 75vw;
   align-items: center;
-  display: block;
+  display: inline-block;
 }
-img {
+/* img {
   background-size: cover;
-  background-position: right;
-  max-width: 100%;
+  background-position: center;
+  width: 100vw;
   height: 50vh;
-  background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 p {
   display: inline-block;
   font-size: 3rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+span {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: lighter;
+}
+.p0 {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 35vh;
+  padding-bottom: 40vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+
+  /* wwewew */
+  font-size: 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../Resources/Catalogue_resources/Others/ar-znpaQEiiHko-unsplash_edited.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.p1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../Resources/Catalogue_resources/Others/Jordan_wall.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.p2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../Resources/Catalogue_resources/Others/nike_wall_edited.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.p3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../Resources/Catalogue_resources/Others/Jordan_wall_2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.p4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../../Resources/Catalogue_resources/Others/Vans_wall.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 /* ARTICLE */
 
@@ -123,21 +143,46 @@ p {
   margin-bottom: 0.5rem;
   margin-right: 1rem;
   text-decoration: none;
+  font-style: normal;
 
   display: inline-block;
   padding: 0.2rem 2.5rem 0.2rem 2.5rem;
   background: none;
   font-family: "Montserrat", sans-serif;
+
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   border-radius: 5rem;
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
 #join:hover {
   transform: scale(1.1);
-  color: white;
+  color: black;
   /* border: 0.1rem solid rgba(0, 0, 0, 0.5); */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.icons {
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+  /* background-color: red; */
+}
+.icons:hover {
+  transform: scale(1.1);
+}
+footer {
+  text-align: center;
+  width: 100vw;
+  background-color: black;
+  max-height: 10vh;
+
+  padding-left: 42vw;
+  padding-right: 42vw;
+  padding-top: 30px;
+  padding-bottom: 10rem;
+}
+footer h1 {
+  font-weight: lighter;
 }
